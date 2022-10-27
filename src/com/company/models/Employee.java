@@ -82,6 +82,6 @@ public class Employee {
                 ", number=" + number +
                 ", shopId=" + shopId +
                 ", active=" + active +
-                '}';
+                "\n";
     }
 }

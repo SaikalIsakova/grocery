@@ -8,6 +8,10 @@ public class Shop {
     public Shop() {
     }
 
+    public Shop(String name) {
+        this.name = name;
+    }
+
     public Shop(int id, String name, boolean active) {
         this.id = id;
         this.name = name;
@@ -44,6 +48,6 @@ public class Shop {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", active=" + active +
-                '}';
+                "\n";
     }
 }
