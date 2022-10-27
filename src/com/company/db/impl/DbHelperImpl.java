@@ -13,7 +13,7 @@ public class DbHelperImpl implements DbHelper {
         Connection connection=getConnection();
         PreparedStatement ps=null;
         try {
-             ps=connection.prepareStatement("Insert into tb_employees (name) values ('?')");
+             ps=connection.prepareStatement("Insert into tb_employees (name) values (?)");
              ps.setString(1,emp.getName());
              ps.executeUpdate();
         } catch (SQLException e) {
